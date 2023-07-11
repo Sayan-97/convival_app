@@ -1,3 +1,4 @@
+import 'package:convivalapp/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:convivalapp/global_variables.dart';
 
@@ -90,7 +91,13 @@ class Screen3 extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(16),
                                   gradient: GlobalVariables.buttonBackground),
                               child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const SignUp()));
+                                },
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.transparent,
                                     shadowColor: Colors.transparent),

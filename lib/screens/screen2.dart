@@ -70,7 +70,7 @@ class Screen2 extends StatelessWidget {
                                 fontFamily: 'Outfit',
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
-                                color: Colors.white),
+                                color: GlobalVariables.textGray),
                           ),
                         ),
                         Padding(
