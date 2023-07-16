@@ -1,4 +1,5 @@
 import 'package:convivalapp/global_variables.dart';
+import 'package:convivalapp/screens/profile.dart';
 import 'package:flutter/material.dart';
 
 class Appbar extends StatelessWidget implements PreferredSizeWidget {
@@ -15,11 +16,20 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
       ),
       child: AppBar(
         toolbarHeight: 120,
-        leading: CircleAvatar(
-          radius: 50,
-          backgroundColor: const Color(0xFF00265A),
-          child: Center(
-            child: Image.asset("assets/images/avatar.png"),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Profile(),
+                ));
+          },
+          child: CircleAvatar(
+            radius: 50,
+            backgroundColor: const Color(0xFF00265A),
+            child: Center(
+              child: Image.asset("assets/images/avatar.png"),
+            ),
           ),
         ),
         title: Center(child: Image.asset("assets/images/logo.png")),
