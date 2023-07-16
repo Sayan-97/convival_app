@@ -1,3 +1,4 @@
+import 'package:convivalapp/screens/home.dart';
 import 'package:convivalapp/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:convivalapp/global_variables.dart';
@@ -67,8 +68,7 @@ class Screen3 extends StatelessWidget {
                                 style: TextStyle(
                                     fontFamily: 'Outfit',
                                     fontSize: 27,
-                                    fontWeight: FontWeight.w800,
-                                    color: Colors.white))),
+                                    fontWeight: FontWeight.w800))),
                         const Padding(
                           padding: EdgeInsets.all(20),
                           child: Text(
@@ -96,7 +96,7 @@ class Screen3 extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const SignUp()));
+                                              const HomePage()));
                                 },
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.transparent,

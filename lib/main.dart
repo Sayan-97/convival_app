@@ -1,8 +1,4 @@
 import 'package:convivalapp/global_variables.dart';
-import 'package:convivalapp/screens/home.dart';
-import 'package:convivalapp/screens/screen1.dart';
-import 'package:convivalapp/screens/screen2.dart';
-import 'package:convivalapp/screens/screen3.dart';
 import 'package:convivalapp/screens/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+          brightness: Brightness.dark,
           scaffoldBackgroundColor: GlobalVariables.backgroundColor,
+          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+            backgroundColor: GlobalVariables.bottomNavbarBackground
+          ),
           appBarTheme: const AppBarTheme(
             backgroundColor: Colors.transparent,
             elevation: 0,

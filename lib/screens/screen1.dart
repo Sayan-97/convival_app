@@ -67,8 +67,7 @@ class Screen1 extends StatelessWidget {
                                 style: TextStyle(
                                     fontFamily: 'Outfit',
                                     fontSize: 27,
-                                    fontWeight: FontWeight.w800,
-                                    color: Colors.white))),
+                                    fontWeight: FontWeight.w800))),
                         const Padding(
                           padding: EdgeInsets.all(20),
                           child: Text(
