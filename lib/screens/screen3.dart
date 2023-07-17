@@ -1,5 +1,4 @@
 import 'package:convivalapp/screens/home.dart';
-import 'package:convivalapp/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:convivalapp/global_variables.dart';
 

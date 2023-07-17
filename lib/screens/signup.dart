@@ -40,17 +40,15 @@ class SignUp extends StatelessWidget {
                     fontSize: 27,
                     fontWeight: FontWeight.w800,
                     color: Colors.white))),
-      Form(
-        child: Column(
-          children: [
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Name'
-              ),
-            )
-          ],
+        Form(
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: const InputDecoration(labelText: 'Name'),
+              )
+            ],
+          ),
         ),
-      ),
       ],
     ));
   }

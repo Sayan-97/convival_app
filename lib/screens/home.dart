@@ -1,7 +1,6 @@
-import 'package:convivalapp/components/navigationbar.dart';
 import 'package:convivalapp/global_variables.dart';
 import 'package:flutter/material.dart';
-import 'package:convivalapp/components/appbar.dart';
+import 'package:convivalapp/widgets/appbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,8 +8,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.black,
         appBar: const Appbar(),
-        bottomNavigationBar: const NavBar(),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
@@ -173,17 +172,16 @@ class HomePage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Ludo Hero",
-                                style: TextStyle(
+                                    style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                     )),
                                 SizedBox(height: 5),
                                 Text("2.5k Players",
-                                style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w400,
-                                      color: GlobalVariables.textGray
-                                    ))
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
+                                        color: GlobalVariables.textGray))
                               ],
                             )
                           ],
@@ -208,17 +206,16 @@ class HomePage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Ludo Hero",
-                                style: TextStyle(
+                                    style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                     )),
                                 SizedBox(height: 5),
                                 Text("2.5k Players",
-                                style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w400,
-                                      color: GlobalVariables.textGray
-                                    ))
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
+                                        color: GlobalVariables.textGray))
                               ],
                             )
                           ],

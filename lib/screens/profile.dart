@@ -1,4 +1,4 @@
-import 'package:convivalapp/components/appbar.dart';
+import 'package:convivalapp/widgets/appbar.dart';
 import 'package:convivalapp/global_variables.dart';
 import 'package:flutter/material.dart';
 
