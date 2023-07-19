@@ -4,6 +4,7 @@ class Constants {
   static const navbarWallet = "assets/images/bottom_bar/navbar_wallet_icon.png";
   static const navbarSettings =
       "assets/images/bottom_bar/navbar_settings_icon.png";
+  static const loginBgImage = "assets/images/login_bg_img.png";
 }
 
 enum UserStateEnum {

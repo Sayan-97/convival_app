@@ -39,7 +39,7 @@ class AuthService {
   // }
 
   Future<UserStateEnum> getUserState() async {
-    return UserStateEnum.login;
+    return UserStateEnum.logout;
     // if (_firebaseAuth.currentUser == null) {
     //   return UserStateEnum.logout;
     // } else {

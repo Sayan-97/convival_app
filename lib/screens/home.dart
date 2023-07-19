@@ -1,3 +1,4 @@
+import 'package:convivalapp/features/game/ludo/unity_launcher/launch_unity.dart';
 import 'package:convivalapp/global_variables.dart';
 import 'package:flutter/material.dart';
 import 'package:convivalapp/widgets/appbar.dart';
@@ -98,7 +99,14 @@ class HomePage extends StatelessWidget {
                                               gradient: GlobalVariables
                                                   .buttonBackground),
                                           child: ElevatedButton(
-                                              onPressed: () {},
+                                              onPressed: () {
+                                                Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          const LaunchUnity(),
+                                                    ));
+                                              },
                                               style: ElevatedButton.styleFrom(
                                                   backgroundColor:
                                                       Colors.transparent,

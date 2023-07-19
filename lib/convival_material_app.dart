@@ -1,4 +1,5 @@
 import 'package:convivalapp/core/dI/service_locator.dart';
+import 'package:convivalapp/core/theme/theme.dart';
 import 'package:convivalapp/landing.dart';
 import 'package:flutter/material.dart';
 
@@ -39,18 +40,14 @@ class _ConvivalMaterialAppState extends State<ConvivalMaterialApp> {
   Widget build(BuildContext context) {
     if (!firebaseInitialized) {
       return MaterialApp(
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: BaseTheme.getBaseTheme(),
         home: const Scaffold(
           body: SizedBox(),
         ),
       );
     } else {
       return MaterialApp(
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: BaseTheme.getBaseTheme(),
         home: const LandingScreen(),
       );
     }

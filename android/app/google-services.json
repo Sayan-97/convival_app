@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121043285992",
+    "project_id": "convival-application",
+    "storage_bucket": "convival-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121043285992:android:8c629d3d47ccc97344d65d",
+        "android_client_info": {
+          "package_name": "com.example.convivalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121043285992-l9c2npjbmi4esg4ctpbu5hvc804vkkcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs0cRxySsCRSqOhjow_wQwH9CyEkiOsTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121043285992-l9c2npjbmi4esg4ctpbu5hvc804vkkcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
