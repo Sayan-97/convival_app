@@ -1,5 +1,4 @@
 import 'package:convivalapp/screens/home.dart';
-import 'package:convivalapp/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:convivalapp/global_variables.dart';
 
@@ -96,7 +95,7 @@ class Screen3 extends StatelessWidget {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const SignUp()));
+                                              const HomePage()));
                                 },
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.transparent,
