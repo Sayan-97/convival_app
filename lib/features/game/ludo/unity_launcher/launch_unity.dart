@@ -15,9 +15,10 @@ class _LaunchUnityState extends State<LaunchUnity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.yellow,
-        child: UnityWidget(onUnityCreated: onUnityCreated),
+      body: SizedBox(
+        child: UnityWidget(
+          onUnityCreated: onUnityCreated,
+        ),
       ),
     );
   }

@@ -1,7 +1,10 @@
+import 'package:convivalapp/core/colors/app_colors.dart';
 import 'package:convivalapp/core/constants/constants.dart';
 import 'package:convivalapp/features/home/home_screen.dart';
-import 'package:convivalapp/screens/home.dart';
+import 'package:convivalapp/features/settings/settings.dart';
+import 'package:convivalapp/screens/all_games_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class BottomBarWidget extends StatefulWidget {
   const BottomBarWidget({Key? key}) : super(key: key);
@@ -16,20 +19,25 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
   List<BottomNavigationBarItem> buildBottomNavBarItems() {
     return [
       BottomNavigationBarItem(
-        label: "Home",
-        icon: Image.asset(Constants.navbarHome),
-      ),
+          label: "Home",
+          icon: SvgPicture.asset(Constants.navbarHome),
+          activeIcon: SvgPicture.asset(Constants.navbarHomeActive)
+          // Image.asset(Constants.navbarHomeActive),
+          ),
       BottomNavigationBarItem(
-        icon: Image.asset(Constants.navbargames),
+        icon: SvgPicture.asset(Constants.navbargames),
+        activeIcon: SvgPicture.asset(Constants.navbargamesActive),
         label: "Games",
       ),
+      // BottomNavigationBarItem(
+      //   icon: Image.asset(Constants.navbarWallet),
+      //   label: "Wallet",
+      // ),
       BottomNavigationBarItem(
-        icon: Image.asset(Constants.navbarWallet),
-        label: "Wallet",
-      ),
-      BottomNavigationBarItem(
-        icon: Image.asset(Constants.navbarSettings),
+        icon: SvgPicture.asset(Constants.navbarSettings),
+        activeIcon: SvgPicture.asset(Constants.navbarSettingsActive),
         label: "Setting",
+        // backgroundColor: Colors.yellow,
       ),
     ];
   }
@@ -45,11 +53,10 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
       onPageChanged: (index) {
         pageChanged(index);
       },
-      children: const <Widget>[
-        HomePage(),
-        HomeScreen(),
-        HomeScreen(),
-        HomeScreen(),
+      children: <Widget>[
+        HomeScreen(ontap: bottomTapped),
+        AllGamesScreen(ontap: bottomTapped),
+        SettingsScreen(ontap: bottomTapped),
       ],
     );
   }
@@ -97,9 +104,10 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
           ),
           child: BottomNavigationBar(
             type: BottomNavigationBarType.fixed, // Fixed
-            backgroundColor: Colors.black, // <-- This works for fixed
-            selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.grey,
+            backgroundColor:
+                AppColors.bottomNavbarBackground, // <-- This works for fixed
+            selectedItemColor: Colors.yellow,
+            unselectedItemColor: Colors.white,
             currentIndex: navigationSelectedIndex,
             onTap: (index) {
               bottomTapped(index);

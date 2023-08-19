@@ -1,6 +1,8 @@
 import 'package:convivalapp/core/constants/constants.dart';
 import 'package:convivalapp/core/services/auth_service.dart';
-import 'package:convivalapp/features/login/login_screen.dart';
+import 'package:convivalapp/features/login/presentation/ui/login_screen.dart';
+import 'package:convivalapp/screens/onboarding.dart';
+import 'package:convivalapp/splash_screen.dart';
 import 'package:convivalapp/widgets/bottom_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
@@ -24,15 +26,15 @@ class _LandingScreenState extends State<LandingScreen> {
             switch (snapshot.data) {
               case UserStateEnum.login:
                 return const BottomBarWidget();
-
               case UserStateEnum.logout:
                 return const LoginScreen();
-
+              case UserStateEnum.freshInstall:
+                return const OnboardingScreen();
               default:
-                return const Center(child: CircularProgressIndicator());
+                return const SplashScreen();
             }
           }
-          return const Center(child: CircularProgressIndicator());
+          return const SplashScreen();
         },
       ),
     );
