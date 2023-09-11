@@ -1,4 +1,4 @@
-# convivalapp
+# convival
 
 A new Flutter project.
 

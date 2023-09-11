@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:121043285992:android:8c629d3d47ccc97344d65d",
+        "mobilesdk_app_id": "1:121043285992:android:52c5d16e3ea3de8a44d65d",
         "android_client_info": {
-          "package_name": "com.example.convivalapp"
+          "package_name": "com.convivalgame.convival"
         }
       },
       "oauth_client": [
@@ -29,6 +29,57 @@
             {
               "client_id": "121043285992-7arj2sdp2p9u3h7gjd4ghr0srmj2c2hm.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "121043285992-gqudetuqp9rm0il7atg3m3rchvgkftu7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.convivalapp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121043285992:android:8c629d3d47ccc97344d65d",
+        "android_client_info": {
+          "package_name": "com.example.convivalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121043285992-fj932gdja20oi0v9iqohuse2o09lq028.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.convivalapp",
+            "certificate_hash": "6411a7c1f04167aa5541545b05700b41c80a806f"
+          }
+        },
+        {
+          "client_id": "121043285992-7arj2sdp2p9u3h7gjd4ghr0srmj2c2hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs0cRxySsCRSqOhjow_wQwH9CyEkiOsTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121043285992-7arj2sdp2p9u3h7gjd4ghr0srmj2c2hm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "121043285992-gqudetuqp9rm0il7atg3m3rchvgkftu7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.convivalapp.RunnerTests"
+              }
             }
           ]
         }

@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,19 +49,9 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAn98nqPdCOrpE8LFKZT5zC2QZYwYhnK9k',
-    appId: '1:121043285992:web:3b730b0197fbeb8a44d65d',
-    messagingSenderId: '121043285992',
-    projectId: 'convival-application',
-    authDomain: 'convival-application.firebaseapp.com',
-    storageBucket: 'convival-application.appspot.com',
-    measurementId: 'G-32WV30RK6C',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBs0cRxySsCRSqOhjow_wQwH9CyEkiOsTA',
-    appId: '1:121043285992:android:8c629d3d47ccc97344d65d',
+    appId: '1:121043285992:android:52c5d16e3ea3de8a44d65d',
     messagingSenderId: '121043285992',
     projectId: 'convival-application',
     storageBucket: 'convival-application.appspot.com',
@@ -67,17 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '121043285992',
     projectId: 'convival-application',
     storageBucket: 'convival-application.appspot.com',
+    androidClientId: '121043285992-fj932gdja20oi0v9iqohuse2o09lq028.apps.googleusercontent.com',
     iosClientId: '121043285992-idvoks7da411cnl23pot88k973iuibqt.apps.googleusercontent.com',
     iosBundleId: 'com.example.convivalapp',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCSvNo7HxUPjig0X6Ju5ZlmuOqr6o-wa9M',
-    appId: '1:121043285992:ios:610f65e5fc3e61ac44d65d',
-    messagingSenderId: '121043285992',
-    projectId: 'convival-application',
-    storageBucket: 'convival-application.appspot.com',
-    iosClientId: '121043285992-gqudetuqp9rm0il7atg3m3rchvgkftu7.apps.googleusercontent.com',
-    iosBundleId: 'com.example.convivalapp.RunnerTests',
   );
 }
