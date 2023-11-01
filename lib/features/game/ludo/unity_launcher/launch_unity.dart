@@ -48,6 +48,12 @@ class _LaunchUnityState extends State<LaunchUnity> {
             jsonEncode(messageData));
       }
     }
+    if (message == "Exit") {
+      _unityWidgetController!.unload();
+      _unityWidgetController!.dispose();
+
+      Navigator.of(context).pop();
+    }
   }
 
   Future<bool> _onWillPop() async {
@@ -65,11 +71,16 @@ class _LaunchUnityState extends State<LaunchUnity> {
               ),
               TextButton(
                 onPressed: () {
+                  final messageData = {
+                    "value": true // Provide a default value for null userName
+                  };
                   if (_unityWidgetController != null) {
-                    _unityWidgetController!.unload();
-                    _unityWidgetController!.dispose();
-
-                    Navigator.of(context).pop(true);
+                    _unityWidgetController!.postMessage(
+                        "UnityMessageManager", //gameObject
+                        "ExitMessagePass",
+                        jsonEncode(messageData) //,
+                        );
+                    Navigator.of(context).pop(false);
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(

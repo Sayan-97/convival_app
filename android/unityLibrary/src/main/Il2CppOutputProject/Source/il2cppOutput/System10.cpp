@@ -12203,7 +12203,7 @@ IL_0076:
 		StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_38 = L_37;
 		NullCheck(L_38);
 		String_t* L_39;
-		L_39 = VirtualFuncInvoker0< String_t* >::Invoke(13 /* System.String System.IO.TextReader::ReadLine() */, L_38);
+		L_39 = VirtualFuncInvoker0< String_t* >::Invoke(14 /* System.String System.IO.TextReader::ReadLine() */, L_38);
 		V_5 = L_39;
 		NullCheck(L_38);
 		VirtualActionInvoker0::Invoke(7 /* System.Void System.IO.TextReader::Close() */, L_38);
@@ -28204,7 +28204,7 @@ IL_004a:
 		int32_t L_18 = V_1;
 		NullCheck(L_16);
 		EventInfo_t* L_19;
-		L_19 = VirtualFuncInvoker2< EventInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.EventInfo System.Type::GetEvent(System.String,System.Reflection.BindingFlags) */, L_16, L_17, L_18);
+		L_19 = VirtualFuncInvoker2< EventInfo_t*, String_t*, int32_t >::Invoke(84 /* System.Reflection.EventInfo System.Type::GetEvent(System.String,System.Reflection.BindingFlags) */, L_16, L_17, L_18);
 		V_5 = L_19;
 		MemberInfo_t* L_20 = V_5;
 		bool L_21;
@@ -28422,7 +28422,7 @@ IL_0068:
 		int32_t L_16 = V_2;
 		NullCheck(L_13);
 		EventInfo_t* L_17;
-		L_17 = VirtualFuncInvoker2< EventInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.EventInfo System.Type::GetEvent(System.String,System.Reflection.BindingFlags) */, L_13, L_15, L_16);
+		L_17 = VirtualFuncInvoker2< EventInfo_t*, String_t*, int32_t >::Invoke(84 /* System.Reflection.EventInfo System.Type::GetEvent(System.String,System.Reflection.BindingFlags) */, L_13, L_15, L_16);
 		V_3 = L_17;
 		EventInfo_t* L_18 = V_3;
 		NullCheck(L_18);

@@ -47,7 +47,7 @@ class _AllGamesState extends State<AllGames> {
         const SizedBox(height: 16),
         SizedBox(
           // color: Colors.red,
-          height: size.height * .26,
+          height: size.height * .28,
           child: ListView(
             padding: EdgeInsets.zero,
             scrollDirection: Axis.horizontal,
@@ -78,7 +78,7 @@ class _AllGamesState extends State<AllGames> {
           ),
         ),
         SizedBox(
-          height: size.height * .26,
+          height: size.height * .28,
           child: ListView(
             padding: EdgeInsets.zero,
             scrollDirection: Axis.horizontal,

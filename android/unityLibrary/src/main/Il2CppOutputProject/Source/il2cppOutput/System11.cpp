@@ -12367,7 +12367,7 @@ IL_001e:
 		MethodInfo_t* L_11 = V_0;
 		NullCheck(L_11);
 		Type_t* L_12;
-		L_12 = VirtualFuncInvoker0< Type_t* >::Invoke(39 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_11);
+		L_12 = VirtualFuncInvoker0< Type_t* >::Invoke(40 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_11);
 		Type_t* L_13 = ___returnType3;
 		NullCheck(L_12);
 		bool L_14;
@@ -13073,7 +13073,7 @@ IL_00cc:
 		L_44 = VirtualFuncInvoker0< Type_t* >::Invoke(21 /* System.Type System.ComponentModel.PropertyDescriptor::get_PropertyType() */, __this);
 		NullCheck(L_44);
 		bool L_45;
-		L_45 = VirtualFuncInvoker0< bool >::Invoke(68 /* System.Boolean System.Type::get_IsEnum() */, L_44);
+		L_45 = VirtualFuncInvoker0< bool >::Invoke(69 /* System.Boolean System.Type::get_IsEnum() */, L_44);
 		if (!L_45)
 		{
 			goto IL_0132;
@@ -13440,7 +13440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReflectPropertyDescriptor_get_
 		L_13 = VirtualFuncInvoker0< Type_t* >::Invoke(21 /* System.Type System.ComponentModel.PropertyDescriptor::get_PropertyType() */, __this);
 		NullCheck(L_13);
 		bool L_14;
-		L_14 = VirtualFuncInvoker0< bool >::Invoke(68 /* System.Boolean System.Type::get_IsEnum() */, L_13);
+		L_14 = VirtualFuncInvoker0< bool >::Invoke(69 /* System.Boolean System.Type::get_IsEnum() */, L_13);
 		if (!L_14)
 		{
 			goto IL_00a6;
@@ -20062,7 +20062,7 @@ IL_015a:
 				int32_t L_21 = V_3;
 				NullCheck(L_20);
 				EventInfoU5BU5D_t15CC441197507A7E14B3F62A53BB711E7E0E6110* L_22;
-				L_22 = VirtualFuncInvoker1< EventInfoU5BU5D_t15CC441197507A7E14B3F62A53BB711E7E0E6110*, int32_t >::Invoke(84 /* System.Reflection.EventInfo[] System.Type::GetEvents(System.Reflection.BindingFlags) */, L_20, L_21);
+				L_22 = VirtualFuncInvoker1< EventInfoU5BU5D_t15CC441197507A7E14B3F62A53BB711E7E0E6110*, int32_t >::Invoke(85 /* System.Reflection.EventInfo[] System.Type::GetEvents(System.Reflection.BindingFlags) */, L_20, L_21);
 				V_4 = L_22;
 				EventInfoU5BU5D_t15CC441197507A7E14B3F62A53BB711E7E0E6110* L_23 = V_4;
 				NullCheck(L_23);
@@ -20605,7 +20605,7 @@ IL_00cf_2:
 						MethodInfo_t* L_70 = V_10;
 						NullCheck(L_70);
 						Type_t* L_71;
-						L_71 = VirtualFuncInvoker0< Type_t* >::Invoke(39 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_70);
+						L_71 = VirtualFuncInvoker0< Type_t* >::Invoke(40 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_70);
 						NullCheck(L_69);
 						ArrayElementTypeCheck (L_69, L_71);
 						(L_69)->SetAt(static_cast<il2cpp_array_size_t>(1), (Type_t*)L_71);
@@ -20658,7 +20658,7 @@ IL_0194_2:
 						MethodInfo_t* L_83 = V_10;
 						NullCheck(L_83);
 						Type_t* L_84;
-						L_84 = VirtualFuncInvoker0< Type_t* >::Invoke(39 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_83);
+						L_84 = VirtualFuncInvoker0< Type_t* >::Invoke(40 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_83);
 						Type_t* L_85 = V_9;
 						MethodInfo_t* L_86 = V_10;
 						MethodInfo_t* L_87 = V_11;

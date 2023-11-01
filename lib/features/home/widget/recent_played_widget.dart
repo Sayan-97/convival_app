@@ -36,7 +36,7 @@ class _RecentPlayedState extends State<RecentPlayed> {
           height: 16,
         ),
         Container(
-          height: size.height * .2,
+          height: size.height * .22,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             image: const DecorationImage(
@@ -49,7 +49,7 @@ class _RecentPlayedState extends State<RecentPlayed> {
           child: Stack(
             children: [
               Container(
-                height: size.height * .2,
+                height: size.height * .22,
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     begin: Alignment.centerLeft,

@@ -4,9 +4,9 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation(name: 'unity-classes', ext:'jar')
     implementation(name: 'UnityAds', ext:'aar')
-    implementation(name: 'billing-3.0.3', ext:'aar')
     implementation(name: 'UnityAdsAndroidPlugin', ext:'aar')
     implementation(name: 'common', ext:'aar')
+    implementation(name: 'billing-5.2.1', ext:'aar')
 
 }
 

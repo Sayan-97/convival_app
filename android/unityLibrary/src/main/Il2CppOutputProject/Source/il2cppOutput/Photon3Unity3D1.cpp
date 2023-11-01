@@ -22052,7 +22052,7 @@ IL_0030:
 		Type_t* L_10 = ___type0;
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtualFuncInvoker0< bool >::Invoke(68 /* System.Boolean System.Type::get_IsEnum() */, L_10);
+		L_11 = VirtualFuncInvoker0< bool >::Invoke(69 /* System.Boolean System.Type::get_IsEnum() */, L_10);
 		G_B7_0 = ((int32_t)(L_11));
 		goto IL_0041;
 	}
