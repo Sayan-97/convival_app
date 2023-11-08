@@ -97,4 +97,11 @@ class _LaunchUnityState extends State<LaunchUnity> {
         )) ??
         false;
   }
+
+  @override
+  void dispose() {
+    _unityWidgetController!.unload();
+    _unityWidgetController!.dispose();
+    super.dispose();
+  }
 }
